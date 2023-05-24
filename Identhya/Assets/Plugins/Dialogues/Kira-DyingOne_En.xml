@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+	    <Name>Kira</Name>
+      <Text>What are you doing out here? Why aren´t you in the shelter?4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <Name>Dying Man</Name>
+      <Text>I scaped from the pyramid. I worked for them. Since I´m already useless they want me as nourishment.5</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>2</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <Name>Dying Man</Name>
+      <Text>I almost succeed. But then they sent the drones after me. One of them hit me on the leg.5</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <Name>Dying Man</Name>
+      <Text>I can´t keep walking. Will you have any food to give me?5</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Here you are</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Where´s the pyramid?</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Help thetraitor?</Text>
+          <DestinationNodeID>6</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <Name>Kira</Name>
+      <Text>Here you are. I will bring you energy. I´m on my way to the pyramid. Could you help me?5</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <Name>Kira</Name>
+      <Text>I'm sorry but I must keep my supplies for the rest of the journey.5</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>12</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <Name>Kira</Name>
+      <Text>Food for a traitor? I should kill you.4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>17</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <Name>Dying Man</Name>
+      <Text>The pyramid? Follow this path. You will see it soon.4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>8</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <Name>Kira</Name>
+      <Text>You know who Alan Blanco is? Did you see him?3</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>9</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <Name>Dying Man</Name>
+      <Text>Alan? The scientist! An slave assured he had seen him. He was cryogenized. But in the pyramid little can be seen and a lot is making up. They say one day someone will come to save him. Is it you? I though it was a legend.8</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>10</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <Name>Kira</Name>
+      <Text>When you reach a bunker, don´t mention you scaped from the pyramid. Traitors are not welcomed.6</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>11</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <Name>Dying Man</Name>
+      <Text> No one is a traitor till it has the need. Good luck in your journey. And watch the drones. You must move stealthily. Otherwise they will detect you.6</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <Name>Dying Man</Name>
+      <Text> Where are you heading for? I may help you.3</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>13</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <Name>Kira</Name>
+      <Text>I'm heading for the pyramid. Could you tell me if I´m in the righ direction?4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>14</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <Name>Dying Man</Name>
+      <Text>Why would you want to go there? It´s a death sentence.4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>15</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <Name>Kira</Name>
+      <Text>Have you seen Alan Blanco in the pyramid?4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>16</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <Name>Dying Man</Name>
+      <Text> Alan? I can´t recall anyone with than name.4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <Name>Dying Man</Name>
+      <Text>Wait! You are heading for the pyramid, right? You are looking for the scientist, right? They said one day someone would come to liberate him. I thought it was just a legend. One of the legends spread by the slaves.9</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>18</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <Name>Kira</Name>
+      <Text>What do you know about Alan?3</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>19</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <Name>Dying Man</Name>
+      <Text>A slave told he was awake from cryogenic. He has a little time left. They will kill him. Hurry up! If you move fast the drones won´t reach you.8</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    ////////////////////////////////////////////////////////////////////////
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <Name>Kira</Name>
+      <Text>I need to rush. My time is running out. So is Alan´s time. I can feel it. His part of the Map is fading out.7</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    /////////////////////////////////
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <Name>Kira</Name>
+      <Text>What do I have here? I´ve found one of the puzzle boxes Ernesto Blanco made up for his family. It may contain something useful. But I have to guess how to open it… Be focused, Kira.8</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    /////////////////////////////////
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <Name>Kira</Name>
+      <Text>According to Adela´s coordinates it must be the ship where the family Blanco was captured.7</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    /////////////////////////////////
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <Name>Kira</Name>
+      <Text>Apparently Ernesto enjoys challenging his family...4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    /////////////////////////////////
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <Name>Kira</Name>
+      <Text>Look at this beauties! Alan didn´t have time to use them. I´m sure he doesn´t mind if I do it.6</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    ////////////////////////////////////////////////////////////////////////
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <Name>Kira</Name>
+      <Text>I'll need special gear to climb these walls or I'll skin my hands....6</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <Name>Kira</Name>
+      <Text>That was a close call....6</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <Name>Kira</Name>
+      <Text>Hey! Whoaaah...!.6</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+	    <Name>Kira</Name>
+      <Text>¿Que estas haciendo aqui fuera? ¿Por que no estas en un bunker? Y la pierna... ¿Que le ha pasado a tu pierna?7</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <Name>Hombre Moribundo</Name>
+      <Text>Me escape de la piramide. He trabajado para ellos durante años. Ahora que no soy util quieren utilizarme como alimento.7</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>2</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <Name>Hombre Moribundo</Name>
+      <Text>Casi lo consigo, pero entonces dieron la voz de alarma. Uno de los drones me hirió en la pierna. Consegui despistarle.7</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <Name>Hombre Moribundo</Name>
+      <Text>pero no puedo seguir caminando hasta que recupere fuerzas. ¿No tendrias algo de comer para darme?6</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Aqui tienes</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>¿Dónde esta la piramide?</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>¿Para un traidor?</Text>
+          <DestinationNodeID>6</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <Name>Kira</Name>
+      <Text>Si, aqui tienes. Te dara energia. Estoy buscando la piramide. ¿Me podrias ayudar?5</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <Name>Kira</Name>
+      <Text>Lo siento, pero debo guardar provisiones para el resto del viaje.5</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>12</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <Name>Kira</Name>
+      <Text>¿Comida para un traidor? Tendria que matarte.4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>17</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <Name>Hombre Moribundo</Name>
+      <Text>¿La piramide? Continua por este camino. Pronto la veras.4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>8</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <Name>Kira</Name>
+      <Text>¿Sabes quien es Alan Blanco?¿Le has visto?3</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>9</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <Name>Hombre Moribundo</Name>
+      <Text>¿Alan? ¿El cientifico? En la piramide un humano decia que lo habia visto, que lo tenian criogenizado. Pero alli se ve poco y se inventa mucho.8</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>10</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <Name>Kira</Name>
+      <Text>Cuando llegues a un refugio no menciones que escapaste de la piramide. Los traidores no son bien recibidos.6</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>11</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <Name>Hombre Moribundo</Name>
+      <Text>Nadie es traidor hasta que tiene que serlo. Buena suerte en tu camino. Y ten cuidado con los drones.6</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <Name>Hombre Moribundo</Name>
+      <Text>¿Dónde te diriges? Quiza pueda ayudarte.3</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>13</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <Name>Kira</Name>
+      <Text>Me dirijo a la piramide ¿Podrias indicarme dónde esta?4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>14</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <Name>Hombre Moribundo</Name>
+      <Text>¿Por que querrias ir alli? Alli solo te espera una muerte segura.4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>15</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <Name>Kira</Name>
+      <Text>¿Has visto a Alan Blanco en la piramide?4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>16</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <Name>Hombre Moribundo</Name>
+      <Text>¿Alan? Alli no habia nadie que respondiera a ese nombre4.</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <Name>Hombre Moribundo</Name>
+      <Text>¡Espera! ¡Te diriges a la piramide! No hay nada mas en este desierto. Estas buscando al cientifico, ¿verdad? En la piramide se decia que alguien vendria a liberarlo.9</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>18</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <Name>Kira</Name>
+      <Text>¿Que sabes de Alan?3</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Continue</Text>
+          <DestinationNodeID>19</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <Name>Hombre Moribundo</Name>
+      <Text>Un esclavo me dijo que le habian despertado. Que le quedaba poco tiempo. Date prisa. Si corres todo lo que puedas, los drones no te alcanzaran.8</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    ////////////////////////////////////////////////////////////////////////
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <Name>Kira</Name>
+      <Text>Tengo que darme prisa. Se me acaba el tiempo. A Alan también. Puedo sentirlo.Su parte del Mapa se está apagando.7</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    /////////////////////////////////
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <Name>Kira</Name>
+      <Text>¿Qué tenemos aquí? Una de las cajas secretas que Ernesto Blanco fabricaba para su familia. Ahora sólo tenemos que abrirla. Concéntrate, KIRA.8</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    /////////////////////////////////
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <Name>Kira</Name>
+      <Text>Según las coordenadas de Adela, ése puede ser el barco dela familia Blanco. Estaban en él cuando les capturaron los Elevados.7</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    /////////////////////////////////
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <Name>Kira</Name>
+      <Text>A Ernesto Blanco le gustaba poner retos a su familia...4</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    /////////////////////////////////
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <Name>Kira</Name>
+      <Text>Mira estas preciosidades. Alan no pudo disfrutar de ellas. Estoy segura de que no le importa que las use.6</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Exit</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    ////////////////////////////////////////////////////////////////////////
+  </Nodes>
+</Dialogue>

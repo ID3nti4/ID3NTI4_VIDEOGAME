@@ -1,0 +1,430 @@
+fileFormatVersion: 2
+guid: 5510aa6e2afb8964e9146dcccd16ed4e
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: 4746160265943415708
+    second: Rig|RigHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: -5066275777404652564
+    second: Rig|RigJawGizmo|Take 001|BaseLayer
+  - first:
+      74: -4322160608430196652
+    second: Rig|RigPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: 2004170678246373378
+    second: Rig|RigRibcageGizmo|Take 001|BaseLayer
+  - first:
+      74: 5268999906554274437
+    second: Rig|RigTail2Gizmo|Take 001|BaseLayer
+  - first:
+      74: 2263531571102014077
+    second: Rig|RigTail3Gizmo|Take 001|BaseLayer
+  - first:
+      74: -8625773428605452750
+    second: Rig|RigTail4Gizmo|Take 001|BaseLayer
+  - first:
+      74: 2441094743942254622
+    second: Rig|RigTail5Gizmo|Take 001|BaseLayer
+  - first:
+      74: 7401191571346981952
+    second: Rig|RigTail6Gizmo|Take 001|BaseLayer
+  - first:
+      74: 1110360746739261732
+    second: Rig|Rig|Take 001|BaseLayer
+  - first:
+      74: -1175017498302759760
+    second: RigHeadGizmo|RigHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: 7955183552888010224
+    second: RigHeadGizmo|RigJawGizmo|Take 001|BaseLayer
+  - first:
+      74: 7217119875494748794
+    second: RigHeadGizmo|RigPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: 5983970731347031155
+    second: RigHeadGizmo|RigRibcageGizmo|Take 001|BaseLayer
+  - first:
+      74: -8190602722802977250
+    second: RigHeadGizmo|RigTail2Gizmo|Take 001|BaseLayer
+  - first:
+      74: -7597381480206248013
+    second: RigHeadGizmo|RigTail3Gizmo|Take 001|BaseLayer
+  - first:
+      74: 5712772909019719344
+    second: RigHeadGizmo|RigTail4Gizmo|Take 001|BaseLayer
+  - first:
+      74: 7465510881013703392
+    second: RigHeadGizmo|RigTail5Gizmo|Take 001|BaseLayer
+  - first:
+      74: 4968746842714676024
+    second: RigHeadGizmo|RigTail6Gizmo|Take 001|BaseLayer
+  - first:
+      74: 6426548837500920503
+    second: RigHeadGizmo|Rig|Take 001|BaseLayer
+  - first:
+      74: 7419586340105697094
+    second: RigRibcageGizmo|RigHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: 2595131118313520161
+    second: RigRibcageGizmo|RigJawGizmo|Take 001|BaseLayer
+  - first:
+      74: -8535912040042429449
+    second: RigRibcageGizmo|RigPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: -5232068478593529917
+    second: RigRibcageGizmo|RigRibcageGizmo|Take 001|BaseLayer
+  - first:
+      74: -8618432001161386165
+    second: RigRibcageGizmo|RigTail2Gizmo|Take 001|BaseLayer
+  - first:
+      74: 1059629392056081788
+    second: RigRibcageGizmo|RigTail3Gizmo|Take 001|BaseLayer
+  - first:
+      74: -4471307778171627313
+    second: RigRibcageGizmo|RigTail4Gizmo|Take 001|BaseLayer
+  - first:
+      74: -3498870635539927308
+    second: RigRibcageGizmo|RigTail5Gizmo|Take 001|BaseLayer
+  - first:
+      74: 4647989351180581043
+    second: RigRibcageGizmo|RigTail6Gizmo|Take 001|BaseLayer
+  - first:
+      74: 3589531350786963451
+    second: RigRibcageGizmo|Rig|Take 001|BaseLayer
+  - first:
+      74: -4376581971247518291
+    second: RigPelvisGizmo|RigHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: 2178876157224702640
+    second: RigPelvisGizmo|RigJawGizmo|Take 001|BaseLayer
+  - first:
+      74: -5033671713223309244
+    second: RigPelvisGizmo|RigPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: -500954487557745838
+    second: RigPelvisGizmo|RigRibcageGizmo|Take 001|BaseLayer
+  - first:
+      74: 6685890175792556098
+    second: RigPelvisGizmo|RigTail2Gizmo|Take 001|BaseLayer
+  - first:
+      74: -1777543961382515880
+    second: RigPelvisGizmo|RigTail3Gizmo|Take 001|BaseLayer
+  - first:
+      74: 4493143452389822423
+    second: RigPelvisGizmo|RigTail4Gizmo|Take 001|BaseLayer
+  - first:
+      74: -5040114955374067438
+    second: RigPelvisGizmo|RigTail5Gizmo|Take 001|BaseLayer
+  - first:
+      74: 2024191145308942974
+    second: RigPelvisGizmo|RigTail6Gizmo|Take 001|BaseLayer
+  - first:
+      74: 1082717538003850465
+    second: RigPelvisGizmo|Rig|Take 001|BaseLayer
+  - first:
+      74: -4003301001880805691
+    second: RigTail2Gizmo|RigHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: 4034631735733051649
+    second: RigTail2Gizmo|RigJawGizmo|Take 001|BaseLayer
+  - first:
+      74: 1399659277245645564
+    second: RigTail2Gizmo|RigPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: -2757290074212031074
+    second: RigTail2Gizmo|RigRibcageGizmo|Take 001|BaseLayer
+  - first:
+      74: 5087395647317007260
+    second: RigTail2Gizmo|RigTail2Gizmo|Take 001|BaseLayer
+  - first:
+      74: 2671724311816258721
+    second: RigTail2Gizmo|RigTail3Gizmo|Take 001|BaseLayer
+  - first:
+      74: 5178468599701907954
+    second: RigTail2Gizmo|RigTail4Gizmo|Take 001|BaseLayer
+  - first:
+      74: 1987313340494571025
+    second: RigTail2Gizmo|RigTail5Gizmo|Take 001|BaseLayer
+  - first:
+      74: -2740009420056516656
+    second: RigTail2Gizmo|RigTail6Gizmo|Take 001|BaseLayer
+  - first:
+      74: -7332249033565584710
+    second: RigTail2Gizmo|Rig|Take 001|BaseLayer
+  - first:
+      74: -120508584630204978
+    second: RigTail3Gizmo|RigHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: -1531228180671737802
+    second: RigTail3Gizmo|RigJawGizmo|Take 001|BaseLayer
+  - first:
+      74: 6033098960359810242
+    second: RigTail3Gizmo|RigPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: -2866589051124567193
+    second: RigTail3Gizmo|RigRibcageGizmo|Take 001|BaseLayer
+  - first:
+      74: -4478309869212073244
+    second: RigTail3Gizmo|RigTail2Gizmo|Take 001|BaseLayer
+  - first:
+      74: 5471279544146029244
+    second: RigTail3Gizmo|RigTail3Gizmo|Take 001|BaseLayer
+  - first:
+      74: -1013691236156249907
+    second: RigTail3Gizmo|RigTail4Gizmo|Take 001|BaseLayer
+  - first:
+      74: -243219814298303767
+    second: RigTail3Gizmo|RigTail5Gizmo|Take 001|BaseLayer
+  - first:
+      74: -3257896740830910539
+    second: RigTail3Gizmo|RigTail6Gizmo|Take 001|BaseLayer
+  - first:
+      74: 7372674388238819658
+    second: RigTail3Gizmo|Rig|Take 001|BaseLayer
+  - first:
+      74: -4482519898573796047
+    second: RigTail4Gizmo|RigHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: -3116219641924449512
+    second: RigTail4Gizmo|RigJawGizmo|Take 001|BaseLayer
+  - first:
+      74: -3551058888005122148
+    second: RigTail4Gizmo|RigPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: 9077493139370240436
+    second: RigTail4Gizmo|RigRibcageGizmo|Take 001|BaseLayer
+  - first:
+      74: 1400900773741479556
+    second: RigTail4Gizmo|RigTail2Gizmo|Take 001|BaseLayer
+  - first:
+      74: 6115776933131359360
+    second: RigTail4Gizmo|RigTail3Gizmo|Take 001|BaseLayer
+  - first:
+      74: -1910084436679654163
+    second: RigTail4Gizmo|RigTail4Gizmo|Take 001|BaseLayer
+  - first:
+      74: 5362050521184371729
+    second: RigTail4Gizmo|RigTail5Gizmo|Take 001|BaseLayer
+  - first:
+      74: 5295599333140093377
+    second: RigTail4Gizmo|RigTail6Gizmo|Take 001|BaseLayer
+  - first:
+      74: -7447470876146311704
+    second: RigTail4Gizmo|Rig|Take 001|BaseLayer
+  - first:
+      74: 3126800047530229019
+    second: RigTail5Gizmo|RigHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: -3861680974876937497
+    second: RigTail5Gizmo|RigJawGizmo|Take 001|BaseLayer
+  - first:
+      74: -9136563056409078970
+    second: RigTail5Gizmo|RigPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: -8287648637222241365
+    second: RigTail5Gizmo|RigRibcageGizmo|Take 001|BaseLayer
+  - first:
+      74: -7688255747212621597
+    second: RigTail5Gizmo|RigTail2Gizmo|Take 001|BaseLayer
+  - first:
+      74: -131752165627308477
+    second: RigTail5Gizmo|RigTail3Gizmo|Take 001|BaseLayer
+  - first:
+      74: -1062143726946373480
+    second: RigTail5Gizmo|RigTail4Gizmo|Take 001|BaseLayer
+  - first:
+      74: 4754275810164598524
+    second: RigTail5Gizmo|RigTail5Gizmo|Take 001|BaseLayer
+  - first:
+      74: 7049554236768123232
+    second: RigTail5Gizmo|RigTail6Gizmo|Take 001|BaseLayer
+  - first:
+      74: 228229773750942421
+    second: RigTail5Gizmo|Rig|Take 001|BaseLayer
+  - first:
+      74: -6350367288310749937
+    second: RigTail6Gizmo|RigHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: 8914657376450841493
+    second: RigTail6Gizmo|RigJawGizmo|Take 001|BaseLayer
+  - first:
+      74: 8677288496692535210
+    second: RigTail6Gizmo|RigPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: -4428439221657466915
+    second: RigTail6Gizmo|RigRibcageGizmo|Take 001|BaseLayer
+  - first:
+      74: -4916602382116678140
+    second: RigTail6Gizmo|RigTail2Gizmo|Take 001|BaseLayer
+  - first:
+      74: -7706851415750728393
+    second: RigTail6Gizmo|RigTail3Gizmo|Take 001|BaseLayer
+  - first:
+      74: 6093414981636266082
+    second: RigTail6Gizmo|RigTail4Gizmo|Take 001|BaseLayer
+  - first:
+      74: -644369867522479937
+    second: RigTail6Gizmo|RigTail5Gizmo|Take 001|BaseLayer
+  - first:
+      74: 3032326987859918097
+    second: RigTail6Gizmo|RigTail6Gizmo|Take 001|BaseLayer
+  - first:
+      74: 6819292623555201857
+    second: RigTail6Gizmo|Rig|Take 001|BaseLayer
+  - first:
+      74: 314252551526073191
+    second: RigJawGizmo|RigHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: 8288140754320518794
+    second: RigJawGizmo|RigJawGizmo|Take 001|BaseLayer
+  - first:
+      74: 7101919164475753871
+    second: RigJawGizmo|RigPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: 195019060668112957
+    second: RigJawGizmo|RigRibcageGizmo|Take 001|BaseLayer
+  - first:
+      74: -8303053745356047041
+    second: RigJawGizmo|RigTail2Gizmo|Take 001|BaseLayer
+  - first:
+      74: -9147549929579379719
+    second: RigJawGizmo|RigTail3Gizmo|Take 001|BaseLayer
+  - first:
+      74: 5462021086602334053
+    second: RigJawGizmo|RigTail4Gizmo|Take 001|BaseLayer
+  - first:
+      74: 678343586668531269
+    second: RigJawGizmo|RigTail5Gizmo|Take 001|BaseLayer
+  - first:
+      74: -3418626015316722184
+    second: RigJawGizmo|RigTail6Gizmo|Take 001|BaseLayer
+  - first:
+      74: -1923816774214004633
+    second: RigJawGizmo|Rig|Take 001|BaseLayer
+  - first:
+      74: 5862543501114407046
+    second: Armature|Armature|Take 001|BaseLayer
+  - first:
+      74: -253539061698503747
+    second: Armature|RigHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: -3906013053386808089
+    second: Armature|RigJawGizmo|Take 001|BaseLayer
+  - first:
+      74: 6602079123016608180
+    second: Armature|RigPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: 2277830313667930361
+    second: Armature|RigRibcageGizmo|Take 001|BaseLayer
+  - first:
+      74: 5893914182770137175
+    second: Armature|RigTail2Gizmo|Take 001|BaseLayer
+  - first:
+      74: -3625364060394389158
+    second: Armature|RigTail3Gizmo|Take 001|BaseLayer
+  - first:
+      74: -6025683085945471579
+    second: Armature|RigTail4Gizmo|Take 001|BaseLayer
+  - first:
+      74: 2406272673401197790
+    second: Armature|RigTail5Gizmo|Take 001|BaseLayer
+  - first:
+      74: -5757832169745534716
+    second: Armature|RigTail6Gizmo|Take 001|BaseLayer
+  - first:
+      74: 6267664348123151444
+    second: Armature|Rig|Take 001|BaseLayer
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
