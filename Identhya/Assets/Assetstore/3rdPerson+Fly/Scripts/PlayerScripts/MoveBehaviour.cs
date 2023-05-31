@@ -16,14 +16,14 @@ public class MoveBehaviour : GenericBehaviour
 	private int groundedBool;                       // Animator variable related to whether or not the player is on ground.
 	private bool jump;                              // Boolean to determine whether or not the player started a jump.
 	private bool isColliding;                       // Boolean to determine if the player has collided with an obstacle.
-	private bool isRunningParticles = false;
+	//private bool isRunningParticles = false;
 	private bool CanMove = true;
 
 	public bool _Enabled = true;
 
 	CharacterInput input;
 	UnityInputCharacterControls controls;
-	private ParticleSystem runParticles;
+	//private ParticleSystem runParticles;
 
 	// Start is always called after any Awake functions.
 	void Start()
@@ -39,7 +39,7 @@ public class MoveBehaviour : GenericBehaviour
 		speedSeeker = runSpeed;
 
 		controls = GetComponent<UnityInputCharacterControls>();
-		runParticles = GameObject.Find("RunParticlesSystem").GetComponent<ParticleSystem>();
+		//runParticles = GameObject.Find("RunParticlesSystem").GetComponent<ParticleSystem>();
 	}
 
 	public override void ComponentInputUpdate(CharacterInput input)
@@ -100,18 +100,18 @@ public class MoveBehaviour : GenericBehaviour
 		speed *= speedSeeker;
 		if (behaviourManager.IsSprinting())
 		{
-            if (!isRunningParticles)
+            /*if (!isRunningParticles)
             {
 				runParticles.Play();
 				isRunningParticles = true;
-			}
+			}*/
 			speed = sprintSpeed;
         }
-		else
+		/*else
 		{
 			runParticles.Stop();
 			isRunningParticles = false;
-		}
+		}*/
 
 		behaviourManager.GetAnim.SetFloat(speedFloat, speed, speedDampTime, Time.deltaTime);
 	}
