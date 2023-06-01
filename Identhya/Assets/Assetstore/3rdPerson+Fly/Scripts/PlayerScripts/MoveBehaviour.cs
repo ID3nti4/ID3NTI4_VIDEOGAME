@@ -11,7 +11,7 @@ public class MoveBehaviour : GenericBehaviour
 	public float jumpHeight = 1.5f;                 // Default jump height.
 	public float jumpIntertialForce = 10f;          // Default horizontal inertial force when jumping.
 
-	private float speed, speedSeeker;               // Moving speed.
+	public float speed, speedSeeker;               // Moving speed.
 	private int jumpBool;                           // Animator variable related to jumping.
 	private int groundedBool;                       // Animator variable related to whether or not the player is on ground.
 	private bool jump;                              // Boolean to determine whether or not the player started a jump.
@@ -100,11 +100,12 @@ public class MoveBehaviour : GenericBehaviour
 		speed *= speedSeeker;
 		if (behaviourManager.IsSprinting())
 		{
-            /*if (!isRunningParticles)
+			/*if (!isRunningParticles)
             {
 				runParticles.Play();
 				isRunningParticles = true;
 			}*/
+			Debug.Log("entra");
 			speed = sprintSpeed;
         }
 		/*else

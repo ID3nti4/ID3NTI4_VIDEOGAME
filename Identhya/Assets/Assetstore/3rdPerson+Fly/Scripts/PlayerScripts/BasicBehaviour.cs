@@ -18,7 +18,7 @@ public class BasicBehaviour : MonoBehaviour
 	private Vector3 lastDirection;                        // Last direction the player was moving.
 	private Animator anim;                                // Reference to the Animator component.
 	private ThirdPersonOrbitCamBasic camScript;           // Reference to the third person camera script.
-	private bool sprint;                                  // Boolean to determine whether or not the player activated the sprint mode.
+	public bool sprint;                                  // Boolean to determine whether or not the player activated the sprint mode.
 	private bool changedFOV;                              // Boolean to store when the sprint action has changed de camera FOV.
 	private int hFloat;                                   // Animator variable related to Horizontal Axis.
 	private int vFloat;                                   // Animator variable related to Vertical Axis.
@@ -86,6 +86,7 @@ public class BasicBehaviour : MonoBehaviour
 		// Set the correct camera FOV for sprint mode.
 		if(IsSprinting())
 		{
+			Debug.Log("Entra a la función para modificar el FOV");
 			changedFOV = true;
 			camScript.SetFOV(sprintFOV);
 		}

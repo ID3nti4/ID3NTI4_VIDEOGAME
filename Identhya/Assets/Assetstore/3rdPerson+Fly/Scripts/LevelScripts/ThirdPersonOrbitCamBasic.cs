@@ -13,6 +13,7 @@ public class ThirdPersonOrbitCamBasic : MonoBehaviour
 	public float minVerticalAngle = -60f;                              // Camera min clamp angle.
 	public string XAxis = "Analog X";                                  // The default horizontal axis input name.
 	public string YAxis = "Analog Y";                                  // The default vertical axis input name.
+	public float fovChangeMultiplier = 1;							   // The default speed at which the FOV is changed.
 
 	private float angleH = 0;                                          // Float to store camera horizontal angle related to mouse movement.
 	private float angleV = 0;                                          // Float to store camera vertical angle related to mouse movement.
@@ -73,7 +74,7 @@ public class ThirdPersonOrbitCamBasic : MonoBehaviour
 		cam.rotation = aimRotation;
 
 		// Set FOV.
-		cam.GetComponent<Camera>().fieldOfView = Mathf.Lerp (cam.GetComponent<Camera>().fieldOfView, targetFOV,  Time.deltaTime);
+		cam.GetComponent<Camera>().fieldOfView = Mathf.Lerp (cam.GetComponent<Camera>().fieldOfView, targetFOV,  Time.deltaTime * fovChangeMultiplier);
 
 		// Test for collision with the environment based on current camera position.
 		Vector3 baseTempPosition = player.position + camYRotation * targetPivotOffset;
@@ -135,11 +136,13 @@ public class ThirdPersonOrbitCamBasic : MonoBehaviour
 	public void SetFOV(float customFOV)
 	{
 		this.targetFOV = customFOV;
+		Debug.Log("se define el FOV:" + customFOV);
 	}
 
 	// Reset Field of View to default value.
 	public void ResetFOV()
 	{
+		Debug.Log("se reinicia el FOV");
 		this.targetFOV = defaultFOV;
 	}
 
