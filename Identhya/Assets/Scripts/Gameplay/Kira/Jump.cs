@@ -13,6 +13,7 @@ public class Jump : AnimatedCharacterComponent
 	public float JumpStrengthMultiplier = 1.0f;
 	public float AirControl = 0.5f;
 	float HorizontalMultiplier = 1.0f;
+	public bool hasLanded = false;
 
 	bool jumpStarted = false;
 	bool doubleJumpStarted = false;
@@ -138,4 +139,12 @@ public class Jump : AnimatedCharacterComponent
 		horizontalVelocity.y = 0;
 		rigidbody.velocity = horizontalVelocity;
 	}
+
+	private IEnumerator Landing()
+    {
+		hasLanded = true;
+		yield return new WaitForSeconds(.1f);
+		hasLanded = false;
+		yield return null;
+    }
 }
