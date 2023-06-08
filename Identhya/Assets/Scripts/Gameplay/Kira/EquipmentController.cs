@@ -6,7 +6,7 @@ public class EquipmentController : MonoBehaviour
 {
     public GameObject BootsGO;
     public GameObject GlovesGO;
-    public GameObject rightBootPE, leftBootPE;
+    public GameObject rightBootPE, leftBootPE, rightGlovePE, leftGlovePE;
 
     private void Start()
     {
@@ -33,5 +33,7 @@ public class EquipmentController : MonoBehaviour
     public void GetGloves()
     {
         GlovesGO.SetActive(true);
+        rightGlovePE.SetActive(true);
+        leftGlovePE.SetActive(true);
     }
 }

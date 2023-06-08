@@ -27,6 +27,8 @@ public class SimpleClimb : AnimatedCharacterComponent
 
     public bool ReachedEnd = false;
 
+    public GameObject rightGloveLight, leftGloveLight;
+
     public Collider climbCollider = null;
 
     public bool Enabled = true;
@@ -91,8 +93,8 @@ public class SimpleClimb : AnimatedCharacterComponent
         {
             if (!glovesEffect)
             {
-                rightGloveEffect.Play();
-                leftGloveEffect.Play();
+                StartCoroutine("StartLeftGloveEffect");
+                StartCoroutine("StartRightGloveEffect");
                 glovesEffect = true;
             }
         }
@@ -100,18 +102,51 @@ public class SimpleClimb : AnimatedCharacterComponent
         {
             if (glovesEffect)
             {
-                StartCoroutine("StopGlovesEffects");
+                StartCoroutine("StopLeftGloveEffect");
+                StartCoroutine("StopRightGloveEffect");
                 glovesEffect = false;
             }
         }
 
     }
 
-    private IEnumerator StopGlovesEffects()
+    private IEnumerator StartLeftGloveEffect()
+    {
+        Debug.Log("ENTRAAAAAAA");
+        for (float scale = 0f; scale <= 0.2f; scale += 0.001f)
+        {
+            leftGloveLight.transform.localScale = new Vector3 (scale, scale, scale);
+            yield return null;
+        }
+    }
+
+    private IEnumerator StartRightGloveEffect()
+    {
+        for (float scale = 0f; scale <= 0.2f; scale += 0.001f)
+        {
+            rightGloveLight.transform.localScale = new Vector3(scale, scale, scale);
+            yield return null;
+        }
+    }
+
+    private IEnumerator StopLeftGloveEffect()
     {
         yield return new WaitForSeconds(1f);
-        rightGloveEffect.Stop();
-        leftGloveEffect.Stop();
+        for (float scale = 0.2f; scale >= 0f; scale -= 0.001f)
+        {
+            leftGloveLight.transform.localScale = new Vector3(scale, scale, scale);
+            yield return null;
+        }
+    }
+
+    private IEnumerator StopRightGloveEffect()
+    {
+        yield return new WaitForSeconds(1f);
+        for (float scale = 0.2f; scale >= 0f; scale -= 0.001f)
+        {
+            rightGloveLight.transform.localScale = new Vector3(scale, scale, scale);
+            yield return null;
+        }
     }
 
     IEnumerator JumpBackwards()
