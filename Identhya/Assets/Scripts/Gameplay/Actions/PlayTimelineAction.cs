@@ -12,11 +12,14 @@ public class PlayTimelineAction : GameplayAction
 
     public override Coroutine DoAction(GameObject source)
     {
+        Debug.Log("empìeza Element5");
         if (timeline_A == null) timeline_A = GetComponent<PlayableDirector>();
         isDone = false;
         
         timeline_A.Play();
         timeline_A.played += (p) => { isDone = true; };
+
+        Debug.Log("termina Element5");
 
         return StartCoroutine(WaitUntilPlayed());
     }

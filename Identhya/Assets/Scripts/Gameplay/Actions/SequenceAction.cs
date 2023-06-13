@@ -17,7 +17,8 @@ public class SequenceAction : GameplayAction
         while(index < Actions.Length)
         {
             Debug.Log("Did action " + index);
-            yield return Actions[index].DoAction(source);
+            Actions[index].DoAction(source);
+            yield return null;
             index++;
         }
     }
