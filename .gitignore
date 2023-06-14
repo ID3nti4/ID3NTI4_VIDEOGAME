@@ -70,6 +70,4 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-Identhya/Library/metadata/
-Identhya/Library/metadata/00/0000872662c8fb241bf2ab6cc00dd461
-Identhya/Library/metadata/00/0000872662c8fb241bf2ab6cc00dd461
+Identhya/Library/metadata/*
