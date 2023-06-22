@@ -7,6 +7,8 @@ public class DogState_Defeated : DogState
 {
     [SerializeField] string DefeatAnimKey = "Dead";
     [SerializeField] AudioClip audioClip;
+    [SerializeField] GameObject player;
+    [SerializeField] LevelSystem playerLS;
 
     public GameObject DeathFX;
 
@@ -21,6 +23,9 @@ public class DogState_Defeated : DogState
         dog.GetComponent<SphereCollider>().enabled = false;
         dog.GetComponent<Sight>().Enabled = false;
         dog.GetComponent<NavMeshAgent>().enabled = false;
+        player = GetComponent<Sight>().SeekingObject_N;
+        playerLS = player.GetComponent<LevelSystem>();
+        playerLS.GainExperience(200);
         StartCoroutine(BuryDog(0.3f));
     }
 
