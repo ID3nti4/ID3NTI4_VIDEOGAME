@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class HealthComponent : MonoBehaviour
 {
@@ -15,10 +17,14 @@ public class HealthComponent : MonoBehaviour
     public OnCharacterDiedDelegate OnCharacterBlockedDamage;
     public OnCharacterDamageDelegate OnCharacterDamage;
 
+
+
+
     protected void Start()
     {
         CurrentHealth = InitialHealth;
     }
+
 
     public virtual float CalculateDamage(float Damage, AttackModifier modifier)
     {
@@ -58,4 +64,7 @@ public class HealthComponent : MonoBehaviour
     {
         CurrentHealth = Mathf.Min(InitialHealth, CurrentHealth + Heal);
     }
+
+
+
 }
