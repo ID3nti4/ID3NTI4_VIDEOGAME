@@ -9,11 +9,17 @@ public class HealthIndicator : MonoBehaviour
 {
 
     public Image healthIndicator;
-    HealthComponent healthComponent;
+    public GameObject kira;
+    public HealthComponent kiraHealthComponent;
 
-  
+    private void Start()
+    {
+        kiraHealthComponent = kira.GetComponent<HealthComponent>();
+    }
+
+
     void Update()
     {
-        healthIndicator.fillAmount = healthComponent.CurrentHealth / healthComponent.InitialHealth;
+        healthIndicator.fillAmount = kiraHealthComponent.CurrentHealth / kiraHealthComponent.InitialHealth;
     }
 }
