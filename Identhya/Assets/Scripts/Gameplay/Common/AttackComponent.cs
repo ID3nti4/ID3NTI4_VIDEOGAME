@@ -22,6 +22,8 @@ public class AttackComponent : ControllableCharacterComponent
     public AttackSlot RootArmAttack;
     public AttackSlot RootLegAttack;
 
+    private GameObject maincamera;
+
     AttackSlot CurrentArmAttack;
     AttackSlot CurrentLegAttack;
 
@@ -67,6 +69,7 @@ public class AttackComponent : ControllableCharacterComponent
         kira = GetComponent<Kira>();
         animator = GetComponent<Animator>();
         inventory = FindObjectOfType<InventoryController>();
+        maincamera = GameObject.Find("Main Camera");
 
         ResetAttacks();
 
@@ -164,6 +167,14 @@ public class AttackComponent : ControllableCharacterComponent
     {
         if(slot != null)
         {
+            if(maincamera.transform.rotation.eulerAngles.y < 0)
+            {
+                this.transform.rotation = Quaternion.Euler(this.transform.rotation.eulerAngles.x, maincamera.transform.rotation.eulerAngles.y + 360f, this.transform.rotation.eulerAngles.z);
+            }
+            else
+            {
+                this.transform.rotation = Quaternion.Euler(this.transform.rotation.eulerAngles.x, maincamera.transform.rotation.eulerAngles.y, this.transform.rotation.eulerAngles.z);
+            }
             CurrentAttack = slot;
             controls.Enabled = false;
             timeout = AttackTimeout * AttackTimeMultiplier;
@@ -207,11 +218,11 @@ public class AttackComponent : ControllableCharacterComponent
         InventoryController inventory = FindObjectOfType<InventoryController>();
         if (inventory != null && inventory.HasItem(InventoryController.InventoryItems.Gloves))
         {
-            Range *= 1.5f;
+            Range *= 1.8f;
         }
         if (inventory != null && inventory.HasItem(InventoryController.InventoryItems.Staff))
         {
-            Range *= 2.2f;
+            Range *= 2.3f;
             AttackTimeMultiplier = 1.75f;
         }
 
@@ -227,7 +238,7 @@ public class AttackComponent : ControllableCharacterComponent
                 Vector3 thisToAttacked = (health.gameObject.transform.position - this.transform.position);
                 float dist = thisToAttacked.magnitude;
                 float DotProduct = Vector3.Dot(thisToAttacked.normalized, this.transform.forward);
-                if (health != null && ((dist < Range && DotProduct > 0.6f) || !health.NeedDistance))
+                if (health != null && ((dist < Range && DotProduct > -0.1f) || !health.NeedDistance))
                     health.TakeDamage(CurrentAttack.BaseDamage, CalculateModifiers(), this.gameObject);
             }
         }
