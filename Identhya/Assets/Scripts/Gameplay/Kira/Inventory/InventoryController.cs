@@ -7,7 +7,7 @@ public class InventoryController : MonoBehaviour
     public List<InventoryItems> ForceItems;
     List<InventoryItems> InventoryList;
 
-    public enum InventoryItems { Gloves, Boots, DolphinBone, Coin, FoodCan, Staff, Boomerang };
+    public enum InventoryItems { Gloves, Boots, DolphinBone, Coin, FoodCan, Staff, Boomerang, Necklace, Toy, Message, Records, Picture};
 
     private void Awake()
     {

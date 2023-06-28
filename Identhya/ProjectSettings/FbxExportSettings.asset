@@ -4,7 +4,7 @@
         "m_EditorHideFlags": 0,
         "m_Name": "",
         "m_EditorClassIdentifier": "Unity.Formats.Fbx.Editor:UnityEditor.Formats.Fbx.Exporter:ExportSettings",
-        "ExportOutsideProject": true,
+        "ExportOutsideProject": false,
         "Verbose": false,
         "launchAfterInstallation": true,
         "HideSendToUnityMenu": true,
@@ -16,10 +16,11 @@
             "."
         ],
         "fbxSavePaths": [
+            ".",
+            "/Objects",
             "C:/Users/veron/Downloads/Bote/Character",
             "C:/Users/veron/Downloads",
-            "D:/UnityProjects/ProyectoIdenthya/Identhya_Demo",
-            "."
+            "D:/UnityProjects/ProyectoIdenthya/Identhya_Demo"
         ],
         "selectedFbxPath": 0,
         "selectedPrefabPath": 0,
