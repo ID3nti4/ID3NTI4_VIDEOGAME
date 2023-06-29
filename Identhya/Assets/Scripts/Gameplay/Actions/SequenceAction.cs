@@ -14,12 +14,25 @@ public class SequenceAction : GameplayAction
     IEnumerator DoAllActions(GameObject source)
     {
         int index = 0;
-        while(index < Actions.Length)
+
+        if(this.gameObject.tag == "FinalCrystal")
         {
-            Debug.Log("Did action " + index);
-            Actions[index].DoAction(source);
-            yield return null;
-            index++;
+            while (index < Actions.Length)
+            {
+                Debug.Log("Did action " + index);
+                Actions[index].DoAction(source);
+                yield return null;
+                index++;
+            }
+        }
+        else
+        {
+            while (index < Actions.Length)
+            {
+                Debug.Log("Did action " + index);
+                yield return Actions[index].DoAction(source);
+                index++;
+            }
         }
     }
 }

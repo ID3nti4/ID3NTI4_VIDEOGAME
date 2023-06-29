@@ -226,7 +226,7 @@ public class AttackComponent : ControllableCharacterComponent
         }
         if (inventory != null && inventory.HasItem(InventoryController.InventoryItems.Staff))
         {
-            Range *= 2.2f;
+            Range *= 2.22f;
             AttackTimeMultiplier = 1.75f;
         }
 

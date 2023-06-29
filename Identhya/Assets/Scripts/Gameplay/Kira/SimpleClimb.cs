@@ -55,6 +55,7 @@ public class SimpleClimb : AnimatedCharacterComponent
 
     public override bool CanActivate()
     {
+
         if (!Enabled) return false;
         if (isClimbing) return false;
         if (!kira.IsInFrontOfWall()) return false;
@@ -68,7 +69,7 @@ public class SimpleClimb : AnimatedCharacterComponent
 
     public override void ComponentInputUpdate(CharacterInput input)
     {
-        if(input.Interact && CanActivate() && !isClimbing && CanGrabSurface())
+        if(input.Interact && CanActivate() && !isClimbing && CanGrabSurface() && FindObjectOfType<InventoryController>().HasGloves())
         {
             isClimbing = true;
             kira.ActivateOneComponent<SimpleClimb>();
