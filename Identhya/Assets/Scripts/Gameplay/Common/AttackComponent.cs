@@ -167,14 +167,18 @@ public class AttackComponent : ControllableCharacterComponent
     {
         if(slot != null)
         {
-            if(maincamera.transform.rotation.eulerAngles.y < 0)
+            if (Input.GetJoystickNames().Length == 0)
             {
-                this.transform.rotation = Quaternion.Euler(this.transform.rotation.eulerAngles.x, maincamera.transform.rotation.eulerAngles.y + 360f, this.transform.rotation.eulerAngles.z);
+                if (maincamera.transform.rotation.eulerAngles.y < 0)
+                {
+                    this.transform.rotation = Quaternion.Euler(this.transform.rotation.eulerAngles.x, maincamera.transform.rotation.eulerAngles.y + 360f, this.transform.rotation.eulerAngles.z);
+                }
+                else
+                {
+                    this.transform.rotation = Quaternion.Euler(this.transform.rotation.eulerAngles.x, maincamera.transform.rotation.eulerAngles.y, this.transform.rotation.eulerAngles.z);
+                }
             }
-            else
-            {
-                this.transform.rotation = Quaternion.Euler(this.transform.rotation.eulerAngles.x, maincamera.transform.rotation.eulerAngles.y, this.transform.rotation.eulerAngles.z);
-            }
+            
             CurrentAttack = slot;
             controls.Enabled = false;
             timeout = AttackTimeout * AttackTimeMultiplier;
@@ -222,7 +226,7 @@ public class AttackComponent : ControllableCharacterComponent
         }
         if (inventory != null && inventory.HasItem(InventoryController.InventoryItems.Staff))
         {
-            Range *= 2.3f;
+            Range *= 2.2f;
             AttackTimeMultiplier = 1.75f;
         }
 
