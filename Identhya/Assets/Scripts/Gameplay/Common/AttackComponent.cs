@@ -222,11 +222,11 @@ public class AttackComponent : ControllableCharacterComponent
         InventoryController inventory = FindObjectOfType<InventoryController>();
         if (inventory != null && inventory.HasItem(InventoryController.InventoryItems.Gloves))
         {
-            Range *= 1.8f;
+            Range *= 1.5f;
         }
         if (inventory != null && inventory.HasItem(InventoryController.InventoryItems.Staff))
         {
-            Range *= 2.22f;
+            Range *= 2.2f;
             AttackTimeMultiplier = 1.75f;
         }
 
@@ -242,7 +242,7 @@ public class AttackComponent : ControllableCharacterComponent
                 Vector3 thisToAttacked = (health.gameObject.transform.position - this.transform.position);
                 float dist = thisToAttacked.magnitude;
                 float DotProduct = Vector3.Dot(thisToAttacked.normalized, this.transform.forward);
-                if (health != null && ((dist < Range && DotProduct > -0.1f) || !health.NeedDistance))
+                if (health != null && ((dist < Range && DotProduct > 0.1f) || !health.NeedDistance))
                     health.TakeDamage(CurrentAttack.BaseDamage, CalculateModifiers(), this.gameObject);
             }
         }
