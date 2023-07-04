@@ -3,7 +3,7 @@
   <Nodes>
     <DialogueNode>
       <NodeID>0</NodeID>
-	    <Name>Kira</Name>
+	    <Name>Kir4</Name>
       <Text>What are you doing out here? Why aren´t you in the shelter?4</Text>
       <Options>
         <DialogueOption>
@@ -55,7 +55,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>4</NodeID>
-      <Name>Kira</Name>
+      <Name>Kir4</Name>
       <Text>Here you are. I will bring you energy. I´m on my way to the pyramid. Could you help me?5</Text>
       <Options>
         <DialogueOption>
@@ -66,7 +66,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>5</NodeID>
-      <Name>Kira</Name>
+      <Name>Kir4</Name>
       <Text>I'm sorry but I must keep my supplies for the rest of the journey.5</Text>
       <Options>
         <DialogueOption>
@@ -77,7 +77,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>6</NodeID>
-      <Name>Kira</Name>
+      <Name>Kir4</Name>
       <Text>Food for a traitor? I should kill you.4</Text>
       <Options>
         <DialogueOption>
@@ -99,8 +99,8 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>8</NodeID>
-      <Name>Kira</Name>
-      <Text>You know who Alan Blanco is? Did you see him?3</Text>
+      <Name>Kir4</Name>
+      <Text>You know who 4l4n Bl4nc0 is? Did you see him?3</Text>
       <Options>
         <DialogueOption>
           <Text>Continue</Text>
@@ -111,7 +111,7 @@
     <DialogueNode>
       <NodeID>9</NodeID>
       <Name>Dying Man</Name>
-      <Text>Alan? The scientist! An slave assured he had seen him. He was cryogenized. But in the pyramid little can be seen and a lot is making up. They say one day someone will come to save him. Is it you? I though it was a legend.8</Text>
+      <Text>4l4n? The scientist! An slave assured he had seen him. He was cryogenized. But in the pyramid little can be seen and a lot is making up. They say one day someone will come to save him. Is it you? I though it was a legend.8</Text>
       <Options>
         <DialogueOption>
           <Text>Continue</Text>
@@ -121,7 +121,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>10</NodeID>
-      <Name>Kira</Name>
+      <Name>Kir4</Name>
       <Text>When you reach a bunker, don´t mention you scaped from the pyramid. Traitors are not welcomed.6</Text>
       <Options>
         <DialogueOption>
@@ -154,7 +154,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>13</NodeID>
-      <Name>Kira</Name>
+      <Name>Kir4</Name>
       <Text>I'm heading for the pyramid. Could you tell me if I´m in the righ direction?4</Text>
       <Options>
         <DialogueOption>
@@ -176,8 +176,8 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>15</NodeID>
-      <Name>Kira</Name>
-      <Text>Have you seen Alan Blanco in the pyramid?4</Text>
+      <Name>Kir4</Name>
+      <Text>Have you seen 4l4n Bl4nc0 in the pyramid?4</Text>
       <Options>
         <DialogueOption>
           <Text>Continue</Text>
@@ -188,7 +188,7 @@
     <DialogueNode>
       <NodeID>16</NodeID>
       <Name>Dying Man</Name>
-      <Text> Alan? I can´t recall anyone with than name.4</Text>
+      <Text> 4l4n? I can´t recall anyone with than name.4</Text>
       <Options>
         <DialogueOption>
           <Text>Exit</Text>
@@ -209,8 +209,8 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>18</NodeID>
-      <Name>Kira</Name>
-      <Text>What do you know about Alan?3</Text>
+      <Name>Kir4</Name>
+      <Text>What do you know about 4l4n?3</Text>
       <Options>
         <DialogueOption>
           <Text>Continue</Text>
@@ -232,8 +232,8 @@
     ////////////////////////////////////////////////////////////////////////
     <DialogueNode>
       <NodeID>20</NodeID>
-      <Name>Kira</Name>
-      <Text>I need to rush. My time is running out. So is Alan´s time. I can feel it. His part of the Map is fading out.6</Text>
+      <Name>Kir4</Name>
+      <Text>I need to rush. My time is running out. So is 4l4n´s time. I can feel it. His part of the Map is fading out.6</Text>
       <Options>
         <DialogueOption>
           <Text>Exit</Text>
@@ -244,8 +244,8 @@
     /////////////////////////////////
     <DialogueNode>
       <NodeID>21</NodeID>
-      <Name>Kira</Name>
-      <Text>What do I have here? I´ve found one of the puzzle boxes Ernesto Blanco made up for his family. It may contain something useful. But I have to guess how to open it… Be focused, Kira.8</Text>
+      <Name>Kir4</Name>
+      <Text>What do I have here? I´ve found one of the puzzle boxes Ernesto Bl4nc0 made up for his family. It may contain something useful. But I have to guess how to open it… Be focused, Kir4.8</Text>
       <Options>
         <DialogueOption>
           <Text>Exit</Text>
@@ -256,8 +256,8 @@
     /////////////////////////////////
     <DialogueNode>
       <NodeID>22</NodeID>
-      <Name>Kira</Name>
-      <Text>According to Adela´s coordinates it must be the ship where the family Blanco was captured.5</Text>
+      <Name>Kir4</Name>
+      <Text>According to 4d3l4´s coordinates it must be the ship where the family Bl4nc0 was captured.5</Text>
       <Options>
         <DialogueOption>
           <Text>Exit</Text>
@@ -268,8 +268,8 @@
     /////////////////////////////////
     <DialogueNode>
       <NodeID>23</NodeID>
-      <Name>Kira</Name>
-      <Text>Apparently Ernesto enjoys challenging his family...3</Text>
+      <Name>Kir4</Name>
+      <Text>Apparently 3rn3st0 enjoys challenging his family...3</Text>
       <Options>
         <DialogueOption>
           <Text>Exit</Text>
@@ -280,8 +280,8 @@
     /////////////////////////////////
     <DialogueNode>
       <NodeID>24</NodeID>
-      <Name>Kira</Name>
-      <Text>Look at this beauties! Alan didn´t have time to use them. I´m sure he doesn´t mind if I do it.5</Text>
+      <Name>Kir4</Name>
+      <Text>Look at this beauties! 4l4n didn´t have time to use them. I´m sure he doesn´t mind if I do it.5</Text>
       <Options>
         <DialogueOption>
           <Text>Exit</Text>
@@ -292,7 +292,7 @@
     ////////////////////////////////////////////////////////////////////////
     <DialogueNode>
       <NodeID>25</NodeID>
-      <Name>Kira</Name>
+      <Name>Kir4</Name>
       <Text>I'll need special gear to climb these walls or I'll skin my hands...3</Text>
       <Options>
         <DialogueOption>
@@ -303,7 +303,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>26</NodeID>
-      <Name>Kira</Name>
+      <Name>Kir4</Name>
       <Text>That was a close call...3</Text>
       <Options>
         <DialogueOption>
@@ -314,7 +314,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>27</NodeID>
-      <Name>Kira</Name>
+      <Name>Kir4</Name>
       <Text>Hey! Whoaaah...!2</Text>
       <Options>
         <DialogueOption>
@@ -326,7 +326,7 @@
     /////////////////////////////////
     <DialogueNode>
       <NodeID>28</NodeID>
-      <Name>Kira</Name>
+      <Name>Kir4</Name>
       <Text>I can't reach the pyramid by this path... I must retrace my steps and find another way.5</Text>
       <Options>
         <DialogueOption>
