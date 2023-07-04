@@ -67,7 +67,10 @@ public class BasicBehaviour : MonoBehaviour
     private void Start()
     {
 		//Player start position
-		transform.position = playerStart.transform.position;
+		if (Checkpoint.checkpointStored == false)
+        {
+			transform.position = playerStart.transform.position;
+		}
 	}
 
     void Update()

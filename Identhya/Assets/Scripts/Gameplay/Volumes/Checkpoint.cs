@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Checkpoint : MonoBehaviour
 {
+    public static float px, py, pz, rx, ry, rz;
+    public static bool checkpointStored = false;
+    public static bool lastCheckpoint = false;
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
@@ -15,19 +19,25 @@ public class Checkpoint : MonoBehaviour
 
     private void StoreCheckpoint(Transform playerTransform)
     {
-        PlayerPrefs.SetInt("CheckpointStored", 1);
+        checkpointStored = true;
         PlayerPrefs.SetString("RespawnLevel", SceneManager.GetActiveScene().name);
-        PlayerPrefs.SetFloat("RespawnPosition.x", playerTransform.position.x);
-        PlayerPrefs.SetFloat("RespawnPosition.y", playerTransform.position.y);
-        PlayerPrefs.SetFloat("RespawnPosition.z", playerTransform.position.z);
-        PlayerPrefs.SetFloat("RespawnEuler.x", playerTransform.rotation.eulerAngles.x);
-        PlayerPrefs.SetFloat("RespawnEuler.y", playerTransform.rotation.eulerAngles.y);
-        PlayerPrefs.SetFloat("RespawnEuler.z", playerTransform.rotation.eulerAngles.z);
+        px = playerTransform.position.x;
+        py = playerTransform.position.y;
+        pz = playerTransform.position.z;
+        rx = playerTransform.rotation.eulerAngles.x;
+        ry = playerTransform.rotation.eulerAngles.y;
+        rz = playerTransform.rotation.eulerAngles.z;
         Debug.Log("se guarda checkpoint");
+
+        if(this.tag == "Last")
+        {
+            lastCheckpoint = true;
+        }
     }
 
     public static void ClearCheckpoint()
     {
+        checkpointStored = false;
         PlayerPrefs.SetInt("CheckpointStored", 0);
         PlayerPrefs.SetInt("CavernLightSide", 0);
         PlayerPrefs.SetInt("CavernTimelinePlayed", 0);
