@@ -23,6 +23,7 @@ public class Checkpoint : MonoBehaviour
         PlayerPrefs.SetFloat("RespawnEuler.x", playerTransform.rotation.eulerAngles.x);
         PlayerPrefs.SetFloat("RespawnEuler.y", playerTransform.rotation.eulerAngles.y);
         PlayerPrefs.SetFloat("RespawnEuler.z", playerTransform.rotation.eulerAngles.z);
+        Debug.Log("se guarda checkpoint");
     }
 
     public static void ClearCheckpoint()
