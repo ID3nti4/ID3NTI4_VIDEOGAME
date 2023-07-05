@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelSystem : MonoBehaviour
 {
-    [SerializeField] static int currentExperience, maxExperience = 200, currentLevel = 1;
+    [SerializeField] public static int currentExperience, maxExperience = 200, currentLevel = 1;
 
     private void Start()
     {
