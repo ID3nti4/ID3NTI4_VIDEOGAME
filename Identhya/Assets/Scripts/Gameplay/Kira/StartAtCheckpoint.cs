@@ -28,7 +28,7 @@ public class StartAtCheckpoint : MonoBehaviour
             {
                 FindObjectOfType<EquipmentController>().GetBoots();
                 FindObjectOfType<EquipmentController>().GetGloves();
-                FindObjectOfType<BoomerangController>().ForceSpawnBoomerang = true;
+                GameObject.Find("Boomerang_pickup").GetComponent<PickObjectInteractor>().Interact();
             }
         }
     }
