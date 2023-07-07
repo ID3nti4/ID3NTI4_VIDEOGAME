@@ -1,0 +1,2 @@
+D:\practicas\prototipo_id3nti4\ID3NTI4_VIDEOGAME\ID3NTI4_VIDEOGAME\Identhya\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+D:\practicas\prototipo_id3nti4\ID3NTI4_VIDEOGAME\ID3NTI4_VIDEOGAME\Identhya\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
