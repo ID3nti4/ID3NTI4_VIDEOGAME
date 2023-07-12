@@ -42,6 +42,8 @@ public class AttackComponent : ControllableCharacterComponent
 
     ControllableCharacter character;
 
+    EnergySystem kiraEnergy;
+
     InventoryController inventory;
 
     float AttackTimeMultiplier = 1.0f;
@@ -71,6 +73,8 @@ public class AttackComponent : ControllableCharacterComponent
         inventory = FindObjectOfType<InventoryController>();
         maincamera = GameObject.Find("Main Camera");
 
+        kiraEnergy = GetComponent<EnergySystem>();
+        
         ResetAttacks();
 
         HealthComponentsInRange = new List<HealthComponent>();
@@ -178,7 +182,8 @@ public class AttackComponent : ControllableCharacterComponent
                     this.transform.rotation = Quaternion.Euler(this.transform.rotation.eulerAngles.x, maincamera.transform.rotation.eulerAngles.y, this.transform.rotation.eulerAngles.z);
                 }
             }
-            
+
+            kiraEnergy.DecreaseEnergy(10);
             CurrentAttack = slot;
             controls.Enabled = false;
             timeout = AttackTimeout * AttackTimeMultiplier;
