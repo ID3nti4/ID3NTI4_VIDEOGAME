@@ -33,6 +33,8 @@ public class SimpleClimb : AnimatedCharacterComponent
 
     public bool Enabled = true;
 
+    public EnergySystem energySystem;
+
     private ParticleSystem leftGloveEffect, rightGloveEffect;
     private bool glovesEffect = false;
 
@@ -46,6 +48,7 @@ public class SimpleClimb : AnimatedCharacterComponent
     {
         leftGloveEffect = GameObject.Find("LeftGloveEffect").GetComponent<ParticleSystem>();
         rightGloveEffect = GameObject.Find("RightGloveEffect").GetComponent<ParticleSystem>();
+
     }
 
     private void OnClimbFinished(bool ForceEnableMovement)
@@ -69,11 +72,16 @@ public class SimpleClimb : AnimatedCharacterComponent
 
     public override void ComponentInputUpdate(CharacterInput input)
     {
-        if(input.Interact && CanActivate() && !isClimbing && CanGrabSurface() && FindObjectOfType<InventoryController>().HasGloves())
+        energySystem = GetComponent<EnergySystem>();
+        if (input.Interact && CanActivate() && !isClimbing && CanGrabSurface() && FindObjectOfType<InventoryController>().HasGloves())
         {
-            isClimbing = true;
-            kira.ActivateOneComponent<SimpleClimb>();
-            return;
+            if(energySystem.currentEnergy > 5)
+            {
+                isClimbing = true;
+                energySystem.climbing = true;
+                kira.ActivateOneComponent<SimpleClimb>();
+                return;
+            }
         }
 
         /*if(input.Interact && isClimbing && !ReachedEnd)
@@ -97,6 +105,15 @@ public class SimpleClimb : AnimatedCharacterComponent
                 StartCoroutine("StartLeftGloveEffect");
                 StartCoroutine("StartRightGloveEffect");
                 glovesEffect = true;
+            }
+
+            if(energySystem.currentEnergy <= 0.5)
+            {
+                Enabled = false;
+                OnClimbFinished(true);
+                animator.SetBool(JustFallAnimationKey, true);
+                isClimbing = false;
+                energySystem.climbing = false;
             }
         }
         else
@@ -157,6 +174,7 @@ public class SimpleClimb : AnimatedCharacterComponent
         yield return StartCoroutine(OrientTowardsClimbSurface(2.5f, true));
         OnClimbFinished(true);
         isClimbing = false;
+        energySystem.climbing = false;
         Jump jump = GetComponent<Jump>();
         if(jump != null)
         {
@@ -224,6 +242,7 @@ public class SimpleClimb : AnimatedCharacterComponent
             animator.SetBool(TopReachedAnimationKey, false);
             ReachedEnd = true;
             isClimbing = false;
+            energySystem.climbing = false;
             done = true;
         }
 
@@ -236,6 +255,7 @@ public class SimpleClimb : AnimatedCharacterComponent
             animator.SetBool(TopReachedAnimationKey, true);
             ReachedEnd = true;
             isClimbing = false;
+            energySystem.climbing = false;
             done = true;
            
             exitTop = true;
@@ -246,6 +266,7 @@ public class SimpleClimb : AnimatedCharacterComponent
         {
             animator.SetBool(ClimbAnimationKey, false);
             isClimbing = false;
+            energySystem.climbing = false;
             OnClimbFinished(false);
         }
     }

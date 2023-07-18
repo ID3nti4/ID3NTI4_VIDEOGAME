@@ -8,6 +8,7 @@ public class EnergySystem : MonoBehaviour
     public float currentEnergy, recoveryMultiplier, gradualDecreaseMultiplier;
     public static float maxEnergy = 30;
     private Image energyBar;
+    public bool climbing = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,11 @@ public class EnergySystem : MonoBehaviour
         if(currentEnergy < maxEnergy)
         {
             RecoverEnergy();
+        }
+
+        if(climbing == true)
+        {
+            GradualEnergyDecrease();
         }
 
         currentEnergy = Mathf.Clamp(currentEnergy, 0, maxEnergy);
@@ -48,7 +54,7 @@ public class EnergySystem : MonoBehaviour
 
     public void GradualEnergyDecrease()
     {
-        currentEnergy -= gradualDecreaseMultiplier + Time.deltaTime;
+        currentEnergy -= gradualDecreaseMultiplier * Time.deltaTime;
         UpdateEnergyUI();
     }
 

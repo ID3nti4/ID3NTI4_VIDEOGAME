@@ -12,8 +12,10 @@ public class Jump : AnimatedCharacterComponent
 	public float JumpIntertialForce = 1f;
 	public float JumpStrengthMultiplier = 1.0f;
 	public float AirControl = 0.5f;
+	public float doubleJumpEnergyCost = 15;
 	float HorizontalMultiplier = 1.0f;
 	public bool hasLanded = false;
+	public EnergySystem energySystem;
 
 	bool jumpStarted = false;
 	bool doubleJumpStarted = false;
@@ -53,14 +55,16 @@ public class Jump : AnimatedCharacterComponent
 
 	public override void ComponentInputUpdate(CharacterInput input)
 	{
+		energySystem = GetComponent<EnergySystem>();
 		if (input.Jump && CanActivate() && !jumpStarted)
 		{
 			kira.ActivateOneComponent<Jump>();
 		}
-		else if(input.Jump && jumpStarted && !doubleJumpStarted && inventory!=null && inventory.HasBoots())
+		else if(input.Jump && jumpStarted && !doubleJumpStarted && inventory!=null && inventory.HasBoots() && energySystem.currentEnergy < doubleJumpEnergyCost)
 		{
 			animator.SetTrigger(DoubleJumpAnimKey);
 			doubleJumpStarted = true;
+			energySystem.DecreaseEnergy(doubleJumpEnergyCost);
 			PerformJump();
 		}
 		horizontal = input.MovementHorizontal;
