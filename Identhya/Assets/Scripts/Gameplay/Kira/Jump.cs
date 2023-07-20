@@ -60,7 +60,7 @@ public class Jump : AnimatedCharacterComponent
 		{
 			kira.ActivateOneComponent<Jump>();
 		}
-		else if(input.Jump && jumpStarted && !doubleJumpStarted && inventory!=null && inventory.HasBoots() && energySystem.currentEnergy < doubleJumpEnergyCost)
+		else if(input.Jump && jumpStarted && !doubleJumpStarted && inventory!=null && inventory.HasBoots() && energySystem.currentEnergy >= doubleJumpEnergyCost)
 		{
 			animator.SetTrigger(DoubleJumpAnimKey);
 			doubleJumpStarted = true;
