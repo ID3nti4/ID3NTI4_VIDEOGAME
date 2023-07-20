@@ -22,6 +22,8 @@ public class AttackComponent : ControllableCharacterComponent
     public AttackSlot RootArmAttack;
     public AttackSlot RootLegAttack;
 
+    public BoxCollider attackCollider;
+
     private GameObject maincamera;
 
     AttackSlot CurrentArmAttack;
@@ -183,12 +185,26 @@ public class AttackComponent : ControllableCharacterComponent
                 }
             }
 
-            kiraEnergy.DecreaseEnergy(10);
-            CurrentAttack = slot;
-            controls.Enabled = false;
-            timeout = AttackTimeout * AttackTimeMultiplier;
-            animator.SetInteger(AttackAnimKey, slot.AnimationIndex);
-            return CurrentAttack.NextSlot;
+            if (slot.Name == "Kick1" || slot.Name == "Kick2" || slot.Name == "Kick3")
+            {
+                Debug.Log("Patada");
+                CurrentAttack = slot;
+                controls.Enabled = false;
+                timeout = AttackTimeout * AttackTimeMultiplier;
+                animator.SetInteger(AttackAnimKey, slot.AnimationIndex);
+                return CurrentAttack.NextSlot;
+            }
+            else if((slot.Name == "Punch1" || slot.Name == "Punch2" || slot.Name == "Punch3") && kiraEnergy.currentEnergy >= 10)
+            {
+                Debug.Log("Palo");
+                CurrentAttack = slot;
+                controls.Enabled = false;
+                timeout = AttackTimeout * AttackTimeMultiplier;
+                animator.SetInteger(AttackAnimKey, slot.AnimationIndex);
+                kiraEnergy.DecreaseEnergy(10);
+                StartCoroutine(DetectCrystalCollider());
+                return CurrentAttack.NextSlot;
+            }
         }
         CurrentAttack = null;
         return null;
@@ -209,6 +225,11 @@ public class AttackComponent : ControllableCharacterComponent
             {
                 HealthComponentsInRange.Add(otherHealth);
             }
+        }
+
+        if(other.tag == "BlueCrystal" && attackCollider.enabled == true)
+        {
+            other.GetComponent<BlueCrystal>().DestroyCrystal();
         }
     }
 
@@ -277,4 +298,13 @@ public class AttackComponent : ControllableCharacterComponent
         FinishAttack();
     }
 
+    private IEnumerator DetectCrystalCollider()
+    {
+        yield return new WaitForSeconds(.5f);
+        attackCollider.enabled = true;
+        yield return new WaitForSeconds(0.5f);
+        attackCollider.enabled = false;
+    }
+
+    
 }
