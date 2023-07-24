@@ -15,7 +15,7 @@
     <DialogueNode>
       <NodeID>1</NodeID>
       <Name>Dying Man</Name>
-      <Text>I scaped from the pyramid. I worked for them. Since I´m already useless they want me as nourishment.5</Text>
+      <Text>I escaped from the pyramid. I worked for them. Since I´m already useless they want me as nourishment.5</Text>
       <Options>
         <DialogueOption>
           <Text>Continue</Text>
@@ -40,7 +40,7 @@
       <Text>I can´t keep walking. Will you have any food to give me?5</Text>
       <Options>
         <DialogueOption>
-          <Text>Here you are</Text>
+          <Text>Here you have</Text>
           <DestinationNodeID>4</DestinationNodeID>
         </DialogueOption>
         <DialogueOption>
@@ -56,7 +56,7 @@
     <DialogueNode>
       <NodeID>4</NodeID>
       <Name>Kir4</Name>
-      <Text>Here you are. I will bring you energy. I´m on my way to the pyramid. Could you help me?5</Text>
+      <Text>Here you have. It will bring you energy. I´m on my way to the pyramid. Could you help me?5</Text>
       <Options>
         <DialogueOption>
           <Text>Continue</Text>
@@ -111,7 +111,7 @@
     <DialogueNode>
       <NodeID>9</NodeID>
       <Name>Dying Man</Name>
-      <Text>4l4n? The scientist! An slave assured he had seen him. He was cryogenized. But in the pyramid little can be seen and a lot is making up. They say one day someone will come to save him. Is it you? I though it was a legend.8</Text>
+      <Text>4l4n? The scientist! A slave assured he had seen him. He was cryogenized. But in the pyramid little can be seen and a lot is making up. They say one day someone will come to save him. Is it you? I though it was a legend.8</Text>
       <Options>
         <DialogueOption>
           <Text>Continue</Text>
@@ -122,7 +122,7 @@
     <DialogueNode>
       <NodeID>10</NodeID>
       <Name>Kir4</Name>
-      <Text>When you reach a bunker, don´t mention you scaped from the pyramid. Traitors are not welcomed.6</Text>
+      <Text>When you reach a bunker, don´t mention you escaped from the pyramid. Traitors are not welcomed.6</Text>
       <Options>
         <DialogueOption>
           <Text>Continue</Text>
@@ -155,7 +155,7 @@
     <DialogueNode>
       <NodeID>13</NodeID>
       <Name>Kir4</Name>
-      <Text>I'm heading for the pyramid. Could you tell me if I´m in the righ direction?4</Text>
+      <Text>I'm heading for the pyramid. Could you tell me if I´m in the right direction?4</Text>
       <Options>
         <DialogueOption>
           <Text>Continue</Text>
@@ -245,7 +245,7 @@
     <DialogueNode>
       <NodeID>21</NodeID>
       <Name>Kir4</Name>
-      <Text>What do I have here? I´ve found one of the puzzle boxes Ernesto Bl4nc0 made up for his family. It may contain something useful. But I have to guess how to open it… Be focused, Kir4.8</Text>
+      <Text>What do I have here? I´ve found one of the puzzle boxes 3rn3st0 Bl4nc0 made up for his family. It may contain something useful. But I have to guess how to open it… Be focused, Kir4.8</Text>
       <Options>
         <DialogueOption>
           <Text>Exit</Text>

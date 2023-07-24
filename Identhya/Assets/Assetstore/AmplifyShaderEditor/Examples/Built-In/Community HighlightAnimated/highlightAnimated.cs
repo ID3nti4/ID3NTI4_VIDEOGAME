@@ -8,7 +8,7 @@ namespace TFHC_Shader_Samples
 	public class highlightAnimated : MonoBehaviour
     {
 
-        private Material mat;
+        public Material mat;
 
         void Start()
         {
@@ -20,12 +20,12 @@ namespace TFHC_Shader_Samples
             switchhighlighted(true);
 		}
 
-        void OnMouseExit()
+        public void OnMouseExit()
         {
             switchhighlighted(false);
         }
 
-        void switchhighlighted(bool highlighted)
+        public void switchhighlighted(bool highlighted)
         {
             mat.SetFloat("_Highlighted", (highlighted ? 1.0f : 0.0f));
         }

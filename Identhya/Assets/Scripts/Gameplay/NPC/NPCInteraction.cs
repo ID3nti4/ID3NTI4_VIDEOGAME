@@ -30,7 +30,7 @@ public class NPCInteraction : Interactor
             interactingComponent.gameObject.GetComponent<Kira>().SetPlayerBlocked(false);
             return;
         }
-        npc.SetSpeaking(!line.StartsWith("Kira"));
+        npc.SetSpeaking(!line.StartsWith("Kir4"));
         npc.SetAttitude(lineN%4);
     }
 }
