@@ -67,6 +67,10 @@ public class Jump : AnimatedCharacterComponent
 			energySystem.DecreaseEnergy(doubleJumpEnergyCost);
 			PerformJump();
 		}
+		else if (input.Jump && jumpStarted && !doubleJumpStarted && inventory != null && inventory.HasBoots() && energySystem.currentEnergy < doubleJumpEnergyCost)
+		{
+			energySystem.PlayEnergyBarBlink();
+		}
 		horizontal = input.MovementHorizontal;
 		vertical = input.MovementVertical;
 	}

@@ -9,12 +9,14 @@ public class EnergySystem : MonoBehaviour
     public static float maxEnergy = 30;
     private Image energyBar;
     public bool climbing = false, pause = false;
+    public Animator UI;
 
     // Start is called before the first frame update
     void Start()
     {
         currentEnergy = maxEnergy;
         energyBar = GameObject.Find("EnergyIndicator").GetComponent<Image>();
+        UI = GameObject.Find("UI 1").GetComponent<Animator>();
         UpdateEnergyUI();
     }
 
@@ -50,6 +52,8 @@ public class EnergySystem : MonoBehaviour
     public void IncreaseMaxEnergy(float value)
     {
         maxEnergy += value;
+        currentEnergy = maxEnergy;
+        PlayEnergyBarBlink();
         UpdateEnergyUI();
     }
 
@@ -70,5 +74,10 @@ public class EnergySystem : MonoBehaviour
     private void UpdateEnergyUI()
     {
         energyBar.fillAmount = currentEnergy / 100;
+    }
+
+    public void PlayEnergyBarBlink()
+    {
+        UI.Play("EnergyBarBlink");
     }
 }

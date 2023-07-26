@@ -75,12 +75,16 @@ public class SimpleClimb : AnimatedCharacterComponent
         energySystem = GetComponent<EnergySystem>();
         if (input.Interact && CanActivate() && !isClimbing && CanGrabSurface() && FindObjectOfType<InventoryController>().HasGloves())
         {
-            if(energySystem.currentEnergy > 5)
+            if(energySystem.currentEnergy >= 5)
             {
                 isClimbing = true;
                 energySystem.climbing = true;
                 kira.ActivateOneComponent<SimpleClimb>();
                 return;
+            }
+            else if(energySystem.currentEnergy < 5)
+            {
+                energySystem.PlayEnergyBarBlink();
             }
         }
 
@@ -114,6 +118,7 @@ public class SimpleClimb : AnimatedCharacterComponent
                 animator.SetBool(JustFallAnimationKey, true);
                 isClimbing = false;
                 energySystem.climbing = false;
+                energySystem.PlayEnergyBarBlink();
             }
         }
         else

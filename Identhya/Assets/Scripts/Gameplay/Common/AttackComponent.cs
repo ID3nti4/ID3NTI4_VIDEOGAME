@@ -205,6 +205,11 @@ public class AttackComponent : ControllableCharacterComponent
                 StartCoroutine(DetectCrystalCollider());
                 return CurrentAttack.NextSlot;
             }
+            else if ((slot.Name == "Punch1" || slot.Name == "Punch2" || slot.Name == "Punch3") && kiraEnergy.currentEnergy < 10)
+            {
+                kiraEnergy.PlayEnergyBarBlink();
+            }
+
         }
         CurrentAttack = null;
         return null;
