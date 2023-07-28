@@ -5,6 +5,8 @@ using UnityEngine;
 public class BlueCrystal : MonoBehaviour
 {
     private EnergySystem playerEnergy;
+    public GameObject Prefab;
+    public Transform transform1;
 
     private void Start()
     {
@@ -14,6 +16,7 @@ public class BlueCrystal : MonoBehaviour
     public void DestroyCrystal()
     {
         playerEnergy.IncreaseMaxEnergy(10f);
+        Instantiate(Prefab, transform1);
         Destroy(gameObject);
     }
 }
