@@ -11,7 +11,7 @@ public class BlueCrystal : MonoBehaviour
 
     private void Start()
     {
-        playerEnergy = GameObject.Find("KiraV2").GetComponent<EnergySystem>();
+        playerEnergy = GameObject.Find("Kira_V2").GetComponent<EnergySystem>();
     }
 
     public void DestroyCrystal()
