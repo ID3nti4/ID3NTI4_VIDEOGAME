@@ -194,14 +194,14 @@ public class AttackComponent : ControllableCharacterComponent
                 animator.SetInteger(AttackAnimKey, slot.AnimationIndex);
                 return CurrentAttack.NextSlot;
             }
-            else if((slot.Name == "Punch1" || slot.Name == "Punch2" || slot.Name == "Punch3") && kiraEnergy.currentEnergy >= 10)
+            else if((slot.Name == "Punch1" || slot.Name == "Punch2" || slot.Name == "Punch3") && kiraEnergy.currentEnergy >= 7.5)
             {
                 Debug.Log("Palo");
                 CurrentAttack = slot;
                 controls.Enabled = false;
                 timeout = AttackTimeout * AttackTimeMultiplier;
                 animator.SetInteger(AttackAnimKey, slot.AnimationIndex);
-                kiraEnergy.DecreaseEnergy(10);
+                kiraEnergy.DecreaseEnergy(7.5f);
                 StartCoroutine(DetectCrystalCollider());
                 return CurrentAttack.NextSlot;
             }

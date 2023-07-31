@@ -12,7 +12,7 @@ public class Jump : AnimatedCharacterComponent
 	public float JumpIntertialForce = 1f;
 	public float JumpStrengthMultiplier = 1.0f;
 	public float AirControl = 0.5f;
-	public float doubleJumpEnergyCost = 15;
+	public float doubleJumpEnergyCost = 10;
 	float HorizontalMultiplier = 1.0f;
 	public bool hasLanded = false;
 	public EnergySystem energySystem;

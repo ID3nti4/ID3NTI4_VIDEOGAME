@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class EnergySystem : MonoBehaviour
 {
-    public float currentEnergy, recoveryMultiplier, gradualDecreaseMultiplier;
+    public float currentEnergy, recoveryMultiplier, gradualDecreaseMultiplier = 6;
     public static float maxEnergy = 30;
     private Image energyBar;
     public bool climbing = false, pause = false;
@@ -51,7 +51,10 @@ public class EnergySystem : MonoBehaviour
 
     public void IncreaseMaxEnergy(float value)
     {
-        maxEnergy += value;
+        if(maxEnergy <= 90)
+        {
+            maxEnergy += value;
+        }
         currentEnergy = maxEnergy;
         PlayEnergyBarBlink();
         UpdateEnergyUI();
