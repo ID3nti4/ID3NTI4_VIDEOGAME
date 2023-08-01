@@ -173,7 +173,7 @@ public class AttackComponent : ControllableCharacterComponent
     {
         if(slot != null)
         {
-            if (Input.GetJoystickNames().Length == 0)
+            if (Input.GetJoystickNames().Length == 0 && kiraEnergy.currentEnergy >= 7.5)
             {
                 if (maincamera.transform.rotation.eulerAngles.y < 0)
                 {
