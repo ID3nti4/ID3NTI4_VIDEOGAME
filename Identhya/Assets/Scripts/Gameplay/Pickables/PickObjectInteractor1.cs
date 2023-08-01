@@ -17,6 +17,8 @@ public class PickObjectInteractor1 : Interactor
         {
             action_N.DoAction(this.gameObject);
         }
-        gameObject.GetComponent<Renderer>().materials[1].shader = Shader.Find("Standard");
+        gameObject.transform.Find("CapsuleMain").GetComponent<Renderer>().materials[0].shader = Shader.Find("Standard");
+        gameObject.transform.Find("CapsuleUpperDoor").GetComponent<Renderer>().materials[0].shader = Shader.Find("Standard");
+        gameObject.transform.Find("Wheels").GetComponent<Renderer>().materials[0].shader = Shader.Find("Standard");
     }
 }

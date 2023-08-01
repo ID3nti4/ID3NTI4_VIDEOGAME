@@ -12,5 +12,6 @@ public class StunComponent : MonoBehaviour
     {
         Debug.Log("============================== Enemy stunned! ================================= ");
         OnStunStarted?.Invoke();
+        GameObject.Find("Kira_V2").GetComponent<EnergySystem>().redLightHitting = false;
     }
 }

@@ -8,7 +8,7 @@ public class EnergySystem : MonoBehaviour
     public float currentEnergy, recoveryMultiplier, gradualDecreaseMultiplier = 6;
     public static float maxEnergy = 30;
     private Image energyBar;
-    public bool climbing = false, pause = false;
+    public bool climbing = false, pause = false, redLightHitting = false;
     public Animator UI;
 
     // Start is called before the first frame update
@@ -28,7 +28,7 @@ public class EnergySystem : MonoBehaviour
             RecoverEnergy();
         }
 
-        if(climbing == true)
+        if(climbing == true || redLightHitting == true)
         {
             GradualEnergyDecrease();
         }
