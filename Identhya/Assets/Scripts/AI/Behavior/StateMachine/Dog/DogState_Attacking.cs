@@ -168,6 +168,7 @@ public class DogState_Attacking : DogState
 
         if ((target.transform.position - dog.transform.position).magnitude < attacks[AttackIndex].Distance)
         {
+            Debug.Log("Llama a la funcion para hacer daño");
             target.GetComponent<HealthComponent>().TakeDamage(attacks[AttackIndex].Strength);
         }
         yield return new WaitForSeconds(0.8f);
