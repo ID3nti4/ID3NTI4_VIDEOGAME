@@ -49,7 +49,7 @@ public class RadarRangeController : MonoBehaviour
         {
             obj.GetComponent<Renderer>().material.SetColor("_MainColor", StateColorDict[state]);
         }
-
+/*
         if (gameObject.name.Contains("EnemyDrone") && state == "Hostile")
         {
             gameObject.transform.Find("Capsule (1)").GetComponent<PlayerEnergyConsumption>().redLight = true;
@@ -58,5 +58,6 @@ public class RadarRangeController : MonoBehaviour
         {
             gameObject.transform.Find("Capsule (1)").GetComponent<PlayerEnergyConsumption>().redLight = false;
         }
+*/
     }
 }
