@@ -9,6 +9,8 @@ public class HealthComponent : MonoBehaviour
     public bool NeedDistance = true;
     public float InitialHealth = 10.0f;
     public float CurrentHealth;
+    public float gradualDecreaseMultiplier;
+    public float redLightCounter;
 
     public delegate void OnCharacterDiedDelegate(GameObject Source);
     public delegate void OnCharacterDamageDelegate(float Amount, AttackModifier Modifier, GameObject Source);
@@ -65,6 +67,37 @@ public class HealthComponent : MonoBehaviour
         CurrentHealth = Mathf.Min(InitialHealth, CurrentHealth + Heal);
     }
 
+    public IEnumerator GradualHealthDecrease()
+    {
+        Debug.Log("Entra a GradualHealthDecrease");
+        /*if(redLightCounter > 0)
+        {
+            Debug.Log("Entra al IF");
+            CurrentHealth -= gradualDecreaseMultiplier * Time.deltaTime;
+            yield return null;
+        }*/
+        while(redLightCounter > 0)
+        {
+            CurrentHealth -= gradualDecreaseMultiplier * Time.deltaTime;
+            if (CurrentHealth <= 0.05f)
+            {
+                TakeDamage(1f);
+            }
+            yield return null;
+        }
+    }
 
+    public void IncreaseRedLightCounter(float amount)
+    {
+        Debug.Log("Se aumenta el contador de luces rojas");
+        redLightCounter += amount;
+        redLightCounter = Mathf.Clamp(redLightCounter, 0f, 10f);
+    }
 
+    public void DecreaseRedLightCounter(float amount)
+    {
+        Debug.Log("Se reduce el contador de luces rojas");
+        redLightCounter -= amount;
+        redLightCounter = Mathf.Clamp(redLightCounter, 0f, 10f);
+    }
 }

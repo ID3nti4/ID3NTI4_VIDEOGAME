@@ -19,10 +19,17 @@ public class RadarRangeController : MonoBehaviour
 
     public StateMachine stateMachine_A = null;
 
+    public HealthComponent kiraHealth;
+
+    public bool fromHostile;
+
     private void Start()
     {
         StateColorDict = new Dictionary<string, Color>();
-        foreach(DictEntry entry in StateColor)
+
+        kiraHealth = GameObject.Find("Kira_V2").GetComponent<HealthComponent>();
+
+        foreach (DictEntry entry in StateColor)
         {
             StateColorDict[entry.StateName] = entry.StateColor;
         }
@@ -39,6 +46,7 @@ public class RadarRangeController : MonoBehaviour
     private void OnStateChanged(string StateName, string StateClass)
     {
         SetStateColor(StateClass);
+        Debug.Log("se cambia al estado " + StateName);
     }
 
     public void SetStateColor(string state)
@@ -49,15 +57,18 @@ public class RadarRangeController : MonoBehaviour
         {
             obj.GetComponent<Renderer>().material.SetColor("_MainColor", StateColorDict[state]);
         }
-/*
+
         if (gameObject.name.Contains("EnemyDrone") && state == "Hostile")
         {
-            gameObject.transform.Find("Capsule (1)").GetComponent<PlayerEnergyConsumption>().redLight = true;
+            Debug.Log("Hostile State Detected"); 
+            kiraHealth.IncreaseRedLightCounter(1f);
+            kiraHealth.StartCoroutine("GradualHealthDecrease");
+            fromHostile = true;
         }
-        else if (state != "Hostile")
+        else if (gameObject.name.Contains("EnemyDrone") && state != "Hostile" && fromHostile == true)
         {
-            gameObject.transform.Find("Capsule (1)").GetComponent<PlayerEnergyConsumption>().redLight = false;
+            kiraHealth.DecreaseRedLightCounter(1f);
         }
-*/
+
     }
 }
