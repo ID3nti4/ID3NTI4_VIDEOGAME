@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DisableAction2 : GameplayAction
+public class DisableAction3 : GameplayAction
 {
 
     public GameObject ObjectToDisable;
-    public float decreaseSpeedMultiplier = 2f;
+    public float decreaseSpeedMultiplier = 4f;
 
     public override Coroutine DoAction(GameObject source)
     {
-        StartCoroutine(DisableCavernLights());
+        StartCoroutine(DisableLavaLights());
         return StartCoroutine(FinishImmediately());
     }
 
-    public IEnumerator DisableCavernLights()
+    public IEnumerator DisableLavaLights()
     {
         foreach(Transform child in ObjectToDisable.transform)
         {
@@ -34,6 +34,7 @@ public class DisableAction2 : GameplayAction
                 child.gameObject.SetActive(false);
             }
         }
+        ObjectToDisable.SetActive(false);
     }
     
 }
