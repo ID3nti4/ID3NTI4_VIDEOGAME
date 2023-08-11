@@ -58,14 +58,14 @@ public class RadarRangeController : MonoBehaviour
             obj.GetComponent<Renderer>().material.SetColor("_MainColor", StateColorDict[state]);
         }
 
-        if (/*gameObject.name.Contains("EnemyDrone") &&*/ state == "Hostile")
+        if (gameObject.name.Contains("EnemyDrone") && state == "Hostile")
         {
             Debug.Log("Hostile State Detected"); 
             kiraHealth.IncreaseRedLightCounter(1f);
             kiraHealth.StartCoroutine("GradualHealthDecrease");
             fromHostile = true;
         }
-        else if (/*gameObject.name.Contains("EnemyDrone") && */state != "Hostile" && fromHostile == true)
+        else if (gameObject.name.Contains("EnemyDrone") && state != "Hostile" && fromHostile == true)
         {
             kiraHealth.DecreaseRedLightCounter(1f);
         }
