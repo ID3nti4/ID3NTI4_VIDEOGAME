@@ -236,6 +236,11 @@ public class AttackComponent : ControllableCharacterComponent
         {
             other.GetComponent<BlueCrystal>().DestroyCrystal();
         }
+
+        else if (other.tag == "PinkCrystal" && attackCollider.enabled == true)
+        {
+            other.GetComponent<PinkCrystal>().DestroyCrystal();
+        }
     }
 
     protected void OnTriggerExit(Collider other)
